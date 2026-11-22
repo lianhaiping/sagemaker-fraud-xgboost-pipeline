@@ -4,13 +4,13 @@ The write-up of this project as posted on LinkedIn, with the [summary infographi
 
 ---
 
-How far can you down-sample legitimate transactions before a fraud model starts to suffer? And how much does increasing fraud-class weights actually help?
+How far can you down-sample Goods before a fraud model starts to suffer? And how much does increasing the weight of Bads actually help?
 
 These are two decisions often made by habit rather than evidence.
 
 I built an end-to-end pipeline on Amazon SageMaker to find out, from a 10-configuration XGBoost sweep with hyperparameter tuning (20 random-search trials each, same code, same search, all frauds retained, 3 random seeds each) through to a live, explainable scoring endpoint.
 
-The findings: Down-sampling legitimate transactions ("goods") can cause up to a 7% relative decline in AUC-PR, while re-weighting frauds from the natural class balance all the way to 1:1 produced no statistically detectable improvement in ranking quality.
+The findings: Down-sampling legitimate transactions ("Goods") can cause up to a 7% relative decline in AUC-PR, while re-weighting frauds from the natural class balance all the way to 1:1 produced no statistically detectable improvement in ranking quality.
 
 🚩 Sampling Down Goods Has a Cost
 
