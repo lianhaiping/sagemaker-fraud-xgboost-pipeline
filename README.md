@@ -1,4 +1,4 @@
-# XGBoost credit card fraud detection on Amazon SageMaker
+# Realtime fraud detection with XGBoost on Amazon SageMaker
 
 A production-style training and deployment pipeline for an XGBoost fraud model on Amazon SageMaker, and a 10-configuration experiment run through it: **how many legitimate ("good") transactions does a fraud model need, and how much should the frauds be weighted?**
 
