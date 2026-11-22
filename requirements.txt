@@ -1,0 +1,7 @@
+sagemaker>=2.230,<3
+xgboost==2.1.4
+scikit-learn
+pandas
+numpy
+matplotlib
+boto3

@@ -1,0 +1,25 @@
+# Run outputs and downloaded data (recreated by the scripts)
+outputs/
+data/
+models/
+*.tar.gz
+xgboost-model*
+*.log
+
+# Notebooks are not part of this repository
+*.ipynb
+.ipynb_checkpoints/
+
+# Python and editor clutter
+__pycache__/
+*.pyc
+.env
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Personal lab notes: kept locally, not published
+SageMaker_XGBoost_Fraud_Lab.pdf
+
+# Earlier A-vs-B version of the training pipeline: kept locally for study, not published
+pipeline/train_pipeline_a_vs_b.py
